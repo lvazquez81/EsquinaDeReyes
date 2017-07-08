@@ -1,0 +1,51 @@
+Esquina de Reyes
+
+* Cada jugador recibe 6 cartas.
+* El juego termina cuando un jugador ha puesto todas sus cartas en la mesa.
+* En cada turno, el jugador tomará una carta.
+* En cada turno, el jugador intentará poner una o más cartas en la mesa.
+* Cada carta debe ser parte de una cadena ASDOSKI.
+* Se puede mover una cadena a otra, siempre y cuando cumpla las reglas de ASDOSKI.
+* Los reyes se colocan en las esquinas.
+* Cuando una columna no tiene cartas se puede poner cualquier carta y se inicia una nueva cadena con la carta puesta ahí.
+
+
+	Secuencia ASDOSKI
+	* Intercambia entre rojo y negro.
+	* Debe ser descendente de rey, reina, joto, 10 al 2, y terminando en A.
+	* Puede iniciar con cualquier carta pero solo se podrán agregar cartas menor a esta.
+	* 
+
+Actores
+Jugador 
+- Tomar carta de mesa.
+- Poner carta en mesa.
+- Unir dos cadenas.
+- Poner rey en esquina.
+
+Mesa
+- Cadenas en cada lado.
+- Cadenas en esquinas.
+
+Baraja
+- Dar carta a jugador.
+
+
+
+Views
+
+Inicio de juego
+- Identificar jugador
+- Ver cartas en mano
+
+Mesa de juego
+- Cadenas y reyes
+- Baraja
+
+
+
+
+
+
+
+
