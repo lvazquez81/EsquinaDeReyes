@@ -21,7 +21,86 @@
             margin: 4px;
         }
 
-        .card:hover {
+        .deckCard {
+            height: 120px;
+            margin: 4px;
+        }
+
+        #NorthWest {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            -ms-transform: rotate(130deg); /* IE 9 */
+            -webkit-transform: rotate(130deg); /* Chrome, Safari, Opera */
+            transform: rotate(130deg);
+        }
+
+        #North {
+            position: absolute;
+            left: 200px;
+            top: 0px;
+            -ms-transform: rotate(180deg); /* IE 9 */
+            -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+            transform: rotate(180deg);
+        }
+
+        #NorthEast {
+            position: absolute;
+            left: 400px;
+            top: 0px;
+            transform: rotate(224deg);
+            -webkit-transform: rotate(224deg);
+            -moz-transform: rotate(224deg);
+            -o-transform: rotate(224deg);
+            -ms-transform: rotate(224deg);
+        }
+
+        #East {
+            position: absolute;
+            left: 0px;
+            top: 200px;
+            -ms-transform: rotate(90deg); /* IE 9 */
+            -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+            transform: rotate(90deg);
+        }
+
+        #Center {
+            position: absolute;
+            left: 200px;
+            top: 200px;
+        }
+
+        #West {
+            position: absolute;
+            left: 400px;
+            top: 200px;
+            -ms-transform: rotate(270deg); /* IE 9 */
+            -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+            transform: rotate(270deg);
+        }
+
+        #SouthEast {
+            position: absolute;
+            left: 400px;
+            top: 400px;
+            -ms-transform: rotate(310deg); /* IE 9 */
+            -webkit-transform: rotate(310deg); /* Chrome, Safari, Opera */
+            transform: rotate(310deg);
+        }
+
+        #South {
+            position: absolute;
+            left: 200px;
+            top: 400px;
+        }
+
+        #SouthWest {
+            position: absolute;
+            left: 0px;
+            top: 400px;
+            -ms-transform: rotate(40deg); /* IE 9 */
+            -webkit-transform: rotate(40deg); /* Chrome, Safari, Opera */
+            transform: rotate(40deg);
         }
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -35,33 +114,85 @@
 <body style="background:#F8ECC2">
 
     <div class="container">
-        <div class="col-lg-7">
-            <h2>Rossy</h2>
-            <img class="playerCard" src="cards/10C.svg" />
-            <img class="playerCard" src="cards/4D.svg" />
-            <img class="playerCard" src="cards/AS.svg" />
-            <img class="playerCard" src="cards/6D.svg" />
-            <img class="playerCard" src="cards/9D.svg" />
-            <img class="playerCard" src="cards/JH.svg" />
+        <div class="row">
+            <div class="col-lg-7">
+                <h2>Rossy</h2>
+                <img class="playerCard" src="cards/10C.svg" />
+                <img class="playerCard" src="cards/4D.svg" />
+                <img class="playerCard" src="cards/AS.svg" />
+                <img class="playerCard" src="cards/6D.svg" />
+                <img class="playerCard" src="cards/9D.svg" />
+                <img class="playerCard" src="cards/JH.svg" />
+            </div>
+            <div class="col-lg-5">
+                <div>
+                    <h3>Fernanda</h3>
+                    <img class="oponentCard" src="img/card_back.png" />
+                    <img class="oponentCard" src="img/card_back.png" />
+                    <img class="oponentCard" src="img/card_back.png" />
+                    <img class="oponentCard" src="img/card_back.png" />
+                </div>
+                <div>
+                    <h3>Luis</h3>
+                    <img class="oponentCard" src="img/card_back.png" />
+                    <img class="oponentCard" src="img/card_back.png" />
+                    <img class="oponentCard" src="img/card_back.png" />
+                    <img class="oponentCard" src="img/card_back.png" />
+                    <img class="oponentCard" src="img/card_back.png" />
+                    <img class="oponentCard" src="img/card_back.png" />
+                </div>
+            </div>
         </div>
-        <div class="col-lg-5">
-            <div>
-                <h3>Fernanda</h3>
-                <img class="oponentCard" src="img/card_back.png" />
-                <img class="oponentCard" src="img/card_back.png" />
-                <img class="oponentCard" src="img/card_back.png" />
-                <img class="oponentCard" src="img/card_back.png" />
-            </div>
-            <div>
-                <h3>Luis</h3>
-                <img class="oponentCard" src="img/card_back.png" />
-                <img class="oponentCard" src="img/card_back.png" />
-                <img class="oponentCard" src="img/card_back.png" />
-                <img class="oponentCard" src="img/card_back.png" />
-                <img class="oponentCard" src="img/card_back.png" />
-                <img class="oponentCard" src="img/card_back.png" />
-            </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div style="background:lightgrey;position:absolute;width:800px;height:600px;">
 
+                    <!-- Center -->
+                    <div id="Center">
+                        <img class="deckCard" src="img/card_back.png" />
+                    </div>
+
+                    <!-- North-West  -->
+                    <div id="NorthWest">
+                        <img class="deckCard" src="cards/KH.svg" />
+                    </div>
+
+                    <!-- North -->
+                    <div id="North" class="north">
+                        <img class="deckCard" src="cards/2H.svg"" />
+                    </div>
+
+                    <!-- North-East  -->
+                    <div id="NorthEast">
+                        <img class="deckCard" src="cards/KC.svg" />
+                    </div>
+
+                    <!-- East  -->
+                    <div id="East">
+                        <img class="deckCard" src="cards/QH.svg" />
+                    </div>
+
+                    <!-- South-East  -->
+                    <div id="SouthEast">
+                        <img class="deckCard" src="cards/KD.svg" />
+                    </div>
+
+                    <!-- South  -->
+                    <div id="South">
+                        <img class="deckCard" src="cards/7D.svg" />
+                    </div>
+
+                    <!-- South-West  -->
+                    <div id="SouthWest">
+                        <img class="deckCard" src="cards/KS.svg" />
+                    </div>
+
+                    <!-- West  -->
+                    <div id="West">
+                        <img class="deckCard" src="cards/JD.svg" />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- /.container -->
