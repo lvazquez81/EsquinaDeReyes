@@ -27,12 +27,14 @@
 
         .flip {
             height: 199px;
-            width: 300px;
+            width: 150px;
             margin: 0 auto;
+            float:left;
+            margin:10px;
         }
 
             .flip img {
-                width: 300px;
+                width: 150px;
                 height: auto;
             }
 
@@ -52,28 +54,67 @@
             <div class="col-lg-12">
                 <h5>Esquina de Reyes</h5>
                 <h2>Rossy</h2>
+                <a href="#" id="btnFlip" class="btn btn-default">Iniciar</a>
+
                 <div class="flip">
                     <div class="front">
-                        <img src="img/image.jpg" alt="" />
+                        <img src="img/card_back.png" alt="" />
                     </div>
                     <div class="back">
-                        <h3>Some Text in the Back!</h3>
+                        <img src="cards/6C.svg" alt="" />
                     </div>
                 </div>
+                <div class="flip">
+                    <div class="front">
+                        <img src="img/card_back.png" alt="" />
+                    </div>
+                    <div class="back">
+                        <img src="cards/AH.svg" alt="" />
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front">
+                        <img src="img/card_back.png" alt="" />
+                    </div>
+                    <div class="back">
+                        <img src="cards/4H.svg" alt="" />
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front">
+                        <img src="img/card_back.png" alt="" />
+                    </div>
+                    <div class="back">
+                        <img src="cards/KC.svg" alt="" />
+                    </div>
+                </div>
+                <div class="flip">
+                    <div class="front">
+                        <img src="img/card_back.png" alt="" />
+                    </div>
+                    <div class="back">
+                        <img src="cards/9C.svg" alt="" />
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
     <!-- /.container -->
     <!-- jQuery Version 1.11.1 -->
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js" />
-    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.flip.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-        $(function () {
+        $(document).ready(function () {
             $(".flip").flip({
-                trigger: 'hover'
+                trigger: 'manual'
             });
+        });
+
+        $("#btnFlip").click(function () {
+            $(".flip").flip('toggle');
         });
     </script>
 </body>
