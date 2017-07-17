@@ -1,0 +1,46 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow" />
+    <title>jQuery Flip example</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.flip.min.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" media="all">
+
+    <style type="text/css">
+        #flip-this {
+            perspective:300px;
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Horizontal Flip</h2>
+
+    <a href="#" id="btnFlipMe">Flip</a>
+
+    <div id="flip-this" class="flip-horizontal">
+        <div class="front">
+            <img src="img/image.jpg" width="300px" />
+        </div>
+        <div class="back">
+            <h3>Some Text in the Back!</h3>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#flip-this").flip({
+                trigger: 'manual'
+            });
+        });
+
+        $("#btnFlipMe").click(function () {
+            $("#flip-this").flip('toggle');
+        });
+    </script>
+</body>
+</html>
